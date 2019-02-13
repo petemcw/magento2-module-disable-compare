@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Disable Product Comparison
+ *
+ * @copyright Copyright (c) 2019 Peter McWilliams (http://www.petemcw.com)
+ * @license MIT License
+ * @author Peter McWilliams <petemcw@gmail.com>
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Magento_Backend::stores">
+                    <resource id="Magento_Backend::stores_settings">
+                        <resource id="Magento_Config::config">
+                            <resource id="Prm_DisableCompare::disable_review" title="Disable Compare" sortOrder="3333" />
+                        </resource>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

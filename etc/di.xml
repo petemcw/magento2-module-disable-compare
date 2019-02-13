@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Disable Product Comparison
+ *
+ * @copyright Copyright (c) 2019 Peter McWilliams (http://www.petemcw.com)
+ * @license MIT License
+ * @author Peter McWilliams <petemcw@gmail.com>
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Prm\DisableCompare\Api\ConfigInterface" type="Prm\DisableCompare\Model\Config" />
+</config>
