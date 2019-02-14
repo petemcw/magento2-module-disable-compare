@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Disable Product Comparison
+ *
+ * @copyright Copyright (c) 2019 Peter McWilliams (http://www.petemcw.com)
+ * @license MIT License
+ * @author Peter McWilliams <petemcw@gmail.com>
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="layout_load_before">
+        <observer name="prm_disable_compare_layout_load_before" instance="Prm\DisableCompare\Observer\LayoutLoadBefore" />
+    </event>
+</config>
